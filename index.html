@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Ziad Emad Atta | Digital Card</title>
+<meta name="theme-color" content="#0b0d0c">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:#080a09;
+  color:#f4f7f5;
+  font-family:Arial,sans-serif;
+  min-height:100vh
+}
+
+.wrap{
+  max-width:520px;
+  margin:auto;
+  padding:28px 18px 36px
+}
+
+.card{
+  background:linear-gradient(145deg,#111614,#0b0d0c);
+  border:1px solid #1d6b45;
+  border-radius:28px;
+  padding:28px 20px;
+  box-shadow:0 20px 60px #0008
+}
+
+.avatar{
+  width:112px;
+  height:112px;
+  border-radius:50%;
+  margin:auto;
+  overflow:hidden;
+  background:#18d26e;
+  border:4px solid #18d26e;
+  box-shadow:0 0 0 4px #0d2216,0 8px 28px #0008
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+
+h1{
+  text-align:center;
+  margin:16px 0 6px;
+  font-size:28px
+}
+
+.sub{
+  text-align:center;
+  color:#91a49a;
+  margin-bottom:25px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px
+}
+
+a{
+  text-decoration:none;
+  color:#fff
+}
+
+.btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:15px;
+  border-radius:16px;
+  background:#121a16;
+  border:1px solid #20352a;
+  transition:.2s;
+  cursor:pointer
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  border-color:#18d26e
+}
+
+.ico{
+  font-size:21px
+}
+
+.wide{
+  grid-column:1/-1
+}
+
+.section{
+  color:#18d26e;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin:24px 0 10px;
+  text-transform:uppercase
+}
+
+.footer{
+  text-align:center;
+  color:#68766e;
+  font-size:12px;
+  margin-top:22px
+}
+
+/* Auth */
+
+.auth-box{
+  margin-top:25px;
+  padding:18px;
+  border-radius:20px;
+  background:#0d1310;
+  border:1px solid #20352a
+}
+
+.auth-box h2{
+  margin:0 0 15px;
+  font-size:20px;
+  text-align:center
+}
+
+.auth-input{
+  width:100%;
+  padding:14px;
+  margin-bottom:10px;
+  border-radius:12px;
+  border:1px solid #263b30;
+  background:#080a09;
+  color:#fff;
+  outline:none;
+  font-size:15px
+}
+
+.auth-input:focus{
+  border-color:#18d26e
+}
+
+.auth-btn{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:12px;
+  background:#18d26e;
+  color:#061109;
+  font-weight:bold;
+  font-size:15px;
+  cursor:pointer;
+  margin-top:5px
+}
+
+.auth-secondary{
+  width:100%;
+  padding:12px;
+  border:1px solid #263b30;
+  border-radius:12px;
+  background:#121a16;
+  color:#fff;
+  cursor:pointer;
+  margin-top:9px
+}
+
+.auth-message{
+  text-align:center;
+  font-size:13px;
+  color:#91a49a;
+  margin-top:12px;
+  line-height:1.5
+}
+
+.user-box{
+  display:none;
+  text-align:center;
+  margin-top:18px;
+  padding:14px;
+  border-radius:16px;
+  background:#0d2216;
+  border:1px solid #1d6b45
+}
+
+.user-email{
+  color:#18d26e;
+  font-weight:bold;
+  word-break:break-all;
+  margin-bottom:10px
+}
+
+.logout-btn{
+  padding:10px 18px;
+  border-radius:10px;
+  border:1px solid #31503f;
+  background:#121a16;
+  color:white;
+  cursor:pointer
+}
+
+.hidden{
+  display:none
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+<div class="card">
+
+<div class="avatar">
+<img src="ziad-photo.jpg" alt="Ziad Emad Atta">
+</div>
+
+<h1>Ziad Emad Atta</h1>
+<div class="sub">Personal Digital Card</div>
+
+<div class="grid">
+
+<a class="btn wide" href="tel:01103979739">
+<span class="ico">📞</span>
+<b>Call</b>
+<span style="margin-left:auto;color:#7f9288">01103979739</span>
+</a>
+
+<a class="btn" href="https://wa.me/201103979739">
+<span class="ico">💬</span>
+<b>WhatsApp</b>
+</a>
+
+<a class="btn" href="mailto:ziad.11112010@gmail.com">
+<span class="ico">✉️</span>
+<b>Email</b>
+</a>
+
+</div>
+
+<div class="section">Payments</div>
+
+<div class="grid">
+
+<a class="btn" href="tel:01007575050">
+<span class="ico">💰</span>
+<b>Vodafone Cash</b>
+</a>
+
+<a class="btn" href="https://ipn.eg/S/ziad.11112010/instapay/76zR1W" target="_blank" rel="noopener">
+<span class="ico">💳</span>
+<b>InstaPay</b>
+</a>
+
+</div>
+
+<div class="section">Social</div>
+
+<div class="grid">
+
+<a class="btn" href="https://www.instagram.com/z_zizo_zooz?stkn=ejB6MTgyOXc0c3Iy" target="_blank">
+<span class="ico">📸</span>
+<b>Instagram</b>
+</a>
+
+<a class="btn" href="https://www.facebook.com/share/19R4m3Y2jS/" target="_blank">
+<span class="ico">📘</span>
+<b>Facebook</b>
+</a>
+
+<a class="btn" href="https://tiktok.com/@ziademad00" target="_blank">
+<span class="ico">🎵</span>
+<b>TikTok</b>
+</a>
+
+<a class="btn" href="https://t.me/trbxV1" target="_blank">
+<span class="ico">✈️</span>
+<b>Telegram</b>
+</a>
+
+</div>
+
+<!-- AUTH -->
+
+<div class="section">Account</div>
+
+<div class="auth-box">
+
+<div id="authForms">
+
+<h2 id="authTitle">Create Account</h2>
+
+<input
+  id="email"
+  class="auth-input"
+  type="email"
+  placeholder="Email"
+  autocomplete="email"
+>
+
+<input
+  id="password"
+  class="auth-input"
+  type="password"
+  placeholder="Password"
+  autocomplete="new-password"
+>
+
+<button id="mainAuthBtn" class="auth-btn">
+Create Account
+</button>
+
+<button id="switchAuthBtn" class="auth-secondary">
+Already have an account? Login
+</button>
+
+<div id="authMessage" class="auth-message"></div>
+
+</div>
+
+<div id="userBox" class="user-box">
+
+<div>Logged in as:</div>
+
+<div id="userEmail" class="user-email"></div>
+
+<button id="logoutBtn" class="logout-btn">
+Logout
+</button>
+
+</div>
+
+</div>
+
+<div class="footer">
+Scan • Connect • Save
+</div>
+
+</div>
+</div>
+
+
+<!-- Supabase -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+const SUPABASE_URL =
+"https://mmedeahojjxladtmdplc.supabase.co";
+
+const SUPABASE_PUBLISHABLE_KEY =
+"sb_publishable_h3_fleADmTTN5MrEzvIgjA_o5dJ4_Y7";
+
+const supabaseClient =
+supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
+
+/* Elements */
+
+const emailInput =
+document.getElementById("email");
+
+const passwordInput =
+document.getElementById("password");
+
+const mainAuthBtn =
+document.getElementById("mainAuthBtn");
+
+const switchAuthBtn =
+document.getElementById("switchAuthBtn");
+
+const authTitle =
+document.getElementById("authTitle");
+
+const authMessage =
+document.getElementById("authMessage");
+
+const authForms =
+document.getElementById("authForms");
+
+const userBox =
+document.getElementById("userBox");
+
+const userEmail =
+document.getElementById("userEmail");
+
+const logoutBtn =
+document.getElementById("logoutBtn");
+
+
+let loginMode = false;
+
+
+/* Message */
+
+function showMessage(message){
+  authMessage.textContent = message;
+}
+
+
+/* Switch Login / Signup */
+
+switchAuthBtn.addEventListener("click", function(){
+
+  loginMode = !loginMode;
+
+  showMessage("");
+
+  if(loginMode){
+
+    authTitle.textContent = "Login";
+
+    mainAuthBtn.textContent = "Login";
+
+    switchAuthBtn.textContent =
+      "Don't have an account? Create one";
+
+    passwordInput.autocomplete = "current-password";
+
+  }else{
+
+    authTitle.textContent = "Create Account";
+
+    mainAuthBtn.textContent = "Create Account";
+
+    switchAuthBtn.textContent =
+      "Already have an account? Login";
+
+    passwordInput.autocomplete = "new-password";
+  }
+
+});
+
+
+/* Sign Up / Login */
+
+mainAuthBtn.addEventListener("click", async function(){
+
+  const email =
+    emailInput.value.trim();
+
+  const password =
+    passwordInput.value;
+
+  if(!email || !password){
+
+    showMessage(
+      "Please enter your email and password."
+    );
+
+    return;
+  }
+
+  if(password.length < 6){
+
+    showMessage(
+      "Password must be at least 6 characters."
+    );
+
+    return;
+  }
+
+
+  mainAuthBtn.disabled = true;
+
+  mainAuthBtn.textContent = "Please wait...";
+
+
+  try{
+
+    if(!loginMode){
+
+      /* SIGN UP */
+
+      const { data, error } =
+        await supabaseClient.auth.signUp({
+
+          email: email,
+
+          password: password,
+
+          options: {
+
+            emailRedirectTo:
+              "https://turbon-zzozz.github.io/Ziad-Emad/"
+          }
+
+        });
+
+
+      if(error){
+
+        showMessage(error.message);
+
+      }else{
+
+        showMessage(
+          "Account created! Check your email and click the verification link."
+        );
+
+        emailInput.value = "";
+        passwordInput.value = "";
+      }
+
+
+    }else{
+
+      /* LOGIN */
+
+      const { data, error } =
+        await supabaseClient.auth.signInWithPassword({
+
+          email: email,
+
+          password: password
+
+        });
+
+
+      if(error){
+
+        showMessage(error.message);
+
+      }else{
+
+        showMessage("Login successful!");
+
+        updateUser(data.user);
+      }
+
+    }
+
+  }catch(error){
+
+    showMessage(
+      "Something went wrong. Please try again."
+    );
+
+  }
+
+
+  mainAuthBtn.disabled = false;
+
+  mainAuthBtn.textContent =
+    loginMode ? "Login" : "Create Account";
+
+});
+
+
+/* Show logged user */
+
+function updateUser(user){
+
+  if(!user){
+
+    authForms.style.display = "block";
+
+    userBox.style.display = "none";
+
+    return;
+  }
+
+  authForms.style.display = "none";
+
+  userBox.style.display = "block";
+
+  userEmail.textContent =
+    user.email || "";
+}
+
+
+/* Logout */
+
+logoutBtn.addEventListener("click", async function(){
+
+  await supabaseClient.auth.signOut();
+
+  updateUser(null);
+
+  emailInput.value = "";
+  passwordInput.value = "";
+
+  showMessage("");
+
+});
+
+
+/* Check current session */
+
+async function checkSession(){
+
+  const {
+    data
+  } = await supabaseClient.auth.getSession();
+
+  updateUser(data.session?.user || null);
+
+}
+
+
+/* Listen for auth changes */
+
+supabaseClient.auth.onAuthStateChange(
+  function(event, session){
+
+    updateUser(
+      session?.user || null
+    );
+
+  }
+);
+
+
+checkSession();
+
+</script>
+
+</body>
+</html>
